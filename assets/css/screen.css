@@ -310,6 +310,30 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 2rem;
 }
 
+.social-link-fb:hover svg {
+    fill: #39559F;
+}
+
+.social-link-tw:hover svg {
+    fill: #03A9F4;
+}
+
+.social-link-github:hover svg {
+    fill: #000000;
+}
+
+.social-link-linkedin:hover svg {
+    fill: #0077B7;
+}
+
+.social-link-instagram:hover svg {
+    fill: #C3226F;
+}
+
+.social-link-skype:hover svg {
+    fill: #00AAF2;
+}
+
 .subscribe-button {
     display: block;
     padding: 4px 10px;

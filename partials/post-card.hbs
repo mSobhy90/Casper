@@ -7,10 +7,11 @@
     <div class="post-card-content">
         <a class="post-card-content-link" href="{{url}}">
             <header class="post-card-header">
+                <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+                <h2 class="post-card-title">{{title}}</h2>
                 {{#if primary_tag}}
                     <span class="post-card-tags">{{primary_tag.name}}</span>
                 {{/if}}
-                <h2 class="post-card-title">{{title}}</h2>
             </header>
             <section class="post-card-excerpt">
                 <p>{{excerpt words="33"}}</p>

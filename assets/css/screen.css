@@ -230,7 +230,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: block;
     margin-right: 24px;
-    padding: 11px 0;
     color: #fff;
     font-size: 1.7rem;
     line-height: 1em;
@@ -244,8 +243,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-logo img {
     display: block;
-    width: auto;
-    height: 21px;
+    width: 40px;
+    height: 40px;
 }
 
 .nav {
@@ -307,24 +306,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link svg {
-    height: 1.8rem;
     fill: #fff;
-}
-
-.social-link-fb svg {
-    height: 1.5rem;
-}
-
-.social-link-wb svg {
-    height: 1.6rem;
-}
-
-.social-link-wb svg path {
-    stroke: #fff;
-}
-
-.social-link-rss svg {
-    height: 1.9rem;
+    height: 2rem;
 }
 
 .subscribe-button {
@@ -363,10 +346,18 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 0;
     }
     .site-nav-left {
-        margin-right: 0;
-        padding-left: 4vw;
+        margin-left: 25px;
     }
     .site-nav-right {
+        margin-right: 25px;
+    }
+    .social-link-linkedin {
+        padding-right: 20px;
+    }
+    .social-link-instagram {
+        display: none;
+    }
+    .social-link-skype {
         display: none;
     }
 }
@@ -462,7 +453,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0 25px 25px;
 }
 
-.author-profile-image,
+.author-profile-image {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+
+    object-fit: cover;
+}
+
 .avatar-wrapper {
     display: block;
     width: 100%;
@@ -708,7 +707,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 
 .post-full-image {
-    margin: 0 -10vw -165px;
+    margin: 0 -14vw -165px;
     height: 800px;
     background: var(--lightgrey) center center;
     background-size: cover;
@@ -1662,7 +1661,6 @@ Usage (In Ghost editor):
 
 .floating-header-logo img {
     margin: 0 10px 0 0;
-    max-height: 20px;
 }
 
 .floating-header-divider {
@@ -2260,6 +2258,9 @@ Usage (In Ghost editor):
 @media (max-width: 650px) {
     .site-footer-content {
         flex-direction: column;
+    }
+    .site-footer-nav {
+        display: contents;
     }
     .site-footer-nav a:first-child {
         margin-left: 0;

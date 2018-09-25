@@ -8,6 +8,20 @@ The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the la
 
 &nbsp;
 
+# Customizations
+
+[My blog](msobhy.net) is hosted using [ghost](https://ghost.org) but it required some modifications to the default theme.
+
+Changes:
+- Changed Casper theme to include my Disqus handle to show Disqus comment threads.
+- Added all the images that are not Splash images into an assets file
+- Added social icons from [here](https://iconmonstr.com/)
+
+Upcoming changes:
+- Proper featured post handling
+- Multiple tags
+- Reading time
+
 # First time using a Ghost theme?
 
 Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.

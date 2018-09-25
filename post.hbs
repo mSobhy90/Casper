@@ -62,11 +62,21 @@ into the {body} of the default.hbs template --}}
 
             </footer>
 
-            {{!--
             <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = '{{url absolute="true"}}';
+                        this.page.identifier = 'ghost-{{comment_id}}';
+                    };
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://mohamed-sobhy.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
             </section>
-            --}}
 
         </article>
 
@@ -78,7 +88,7 @@ into the {body} of the default.hbs template --}}
     <div class="inner">
         <div class="read-next-feed">
             {{#if primary_tag}}
-            {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
+            {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{comment_id}}" limit="3" as |related_posts|}}
                 {{#if related_posts}}
                 <article class="read-next-card"
                     {{#if ../primary_tag.feature_image}}

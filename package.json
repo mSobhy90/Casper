@@ -1,8 +1,8 @@
 {
-    "name": "casper",
-    "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
-    "demo": "https://demo.ghost.io",
-    "version": "2.6.2",
+    "name": "msobhy-casper",
+    "description": "A customization of the default personal blogging theme for Ghost blog on msobhy.net. Beautiful, minimal and responsive.",
+    "demo": "https://msobhy.net",
+    "version": "2.6.3",
     "engines": {
         "ghost": ">=2.0.0"
     },
